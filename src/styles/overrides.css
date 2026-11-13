@@ -1,0 +1,44 @@
+:root {
+  --ink: #11110d;
+  --muted: #5d5d59;
+  --bg-soft: #f7f7f4;
+  --cta: #c8f0a0;
+  --cta-hover: #b5e688;
+  --dark-green: #0b3b2e;
+
+  --bs-body-color: var(--ink);
+  --bs-body-bg: #ffffff;
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bs-link-color: var(--ink);
+}
+
+body { color: var(--ink); }
+h1, h2, h3, h4 { color: var(--ink); letter-spacing: -0.02em; }
+
+/* Buttons */
+.btn { border-radius: 999px; font-weight: 500; padding: 0.6rem 1.4rem; }
+.btn-cta { background: var(--cta); border-color: var(--cta); color: var(--ink); }
+.btn-cta:hover { background: var(--cta-hover); border-color: var(--cta-hover); color: var(--ink); }
+.btn-ink { background: var(--ink); border-color: var(--ink); color: #fff; }
+.btn-ink:hover { background: #000; border-color: #000; color: #fff; }
+.btn-outline-ink { background: transparent; border: 1px solid var(--ink); color: var(--ink); }
+.btn-outline-ink:hover { background: var(--ink); color: #fff; }
+
+/* Sections */
+.section-soft { background: var(--bg-soft); }
+.section-dark { background: var(--dark-green); color: #fff; }
+.section-dark h1, .section-dark h2, .section-dark h3 { color: #fff; }
+
+/* Static (inert) elements: look live, do nothing */
+.static-item { cursor: default; pointer-events: none; user-select: none; }
+
+/* Navbar */
+.logo-text { font-size: 1.6rem; font-weight: 700; color: var(--ink); letter-spacing: -0.03em; }
+.nav-item-link {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+a.nav-item-link:hover, .nav-item-link.active { border-bottom-color: var(--ink); }
