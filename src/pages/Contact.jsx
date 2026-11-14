@@ -1,3 +1,3 @@
-export default function Pricing() {
-  return <main className="container py-5"><h1>Pricing</h1></main>;
+export default function Contact() {
+  return <main className="container py-5"><h1>Contact Us</h1></main>;
 }

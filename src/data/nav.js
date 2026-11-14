@@ -1,13 +1,13 @@
 export const nav = {
-  logoText: "Zendesk", // PASTE TEXT HERE
+  logoText: "Zendesk",  
   items: [
-    { label: "Platform", to: "/platform", mega: true }, // PASTE TEXT HERE
-    { label: "Products", mega: true }, // PASTE TEXT HERE
-    { label: "Solutions", mega: true }, // PASTE TEXT HERE
-    { label: "Resources", mega: true }, // PASTE TEXT HERE
-    { label: "Pricing", to: "/pricing" }, // PASTE TEXT HERE
+    { label: "Platform", to: "/platform", mega: true },  
+    { label: "Products", mega: true },  
+    { label: "Solutions", mega: true },  
+    { label: "Resources", mega: true },  
+    { label: "Pricing", to: "/pricing" },  
   ],
-  signIn: "Sign in", // PASTE TEXT HERE
-  viewDemo: "View demo", // PASTE TEXT HERE
-  contact: "Contact Us", // PASTE TEXT HERE
+  signIn: "Sign in",  
+  viewDemo: "View demo",  
+  contact: "Contact Us",  
 };
