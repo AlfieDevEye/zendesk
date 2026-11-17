@@ -42,3 +42,45 @@ h1, h2, h3, h4 { color: var(--ink); letter-spacing: -0.02em; }
   border-bottom: 2px solid transparent;
 }
 a.nav-item-link:hover, .nav-item-link.active { border-bottom-color: var(--ink); }
+
+/* Mega menu */
+.mega-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e0;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  animation: megaIn 0.15s ease-out;
+}
+@keyframes megaIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mega-panel { animation: none; }
+}
+.mega-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.mega-item { padding: 0.25rem 0; }
+.mega-title { font-weight: 600; }
+.mega-top { border-bottom: 1px solid #e5e5e0; }
+
+.nav-trigger {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.25rem 0;
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+}
+.nav-item-link.open, .nav-trigger.open { border-bottom-color: var(--ink); }
+.chev { display: inline-block; transition: transform 0.15s; }
+.chev.open { transform: rotate(180deg); }
